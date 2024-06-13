@@ -1,0 +1,99 @@
+.list-group-item{
+    width: 24rem;
+}
+
+.card-title {
+    background-color: lightgrey;
+}
+
+
+.contact,
+.contact:link,
+.contact:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  display:flex;
+  background-color: white;
+  
+
+}
+
+.outer-container {
+    background-color: lightblue;
+    width: 30rem;
+    margin: auto;
+    padding: 2rem;
+}
+
+.list-group-item {
+    width:15rem;
+}
+
+.contact-container,.form-container {
+    border: solid black 0.1rem;
+    width: 20rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.card-header {
+   background-color : lightblue;
+   font-size: 1.4rem;
+   border-radius: 2rem;
+}
+
+.card-body {
+    font-size: 1.2rem;
+}
+
+.card-body h4{
+    display:inline-block;
+}
+
+.card-text span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.input-group-text {
+    background-color:lightblue ;
+    width: 5rem;
+}
+
+.input-group {
+    margin-bottom:0.5rem
+}
+
+.add-button{
+    width: 2.5rem;
+    position: absolute;
+    left: 60rem;
+    top: 12.5rem;
+    height: 3rem;
+    border-radius: 0;
+}
+
+/* li .name {
+    background-color: white;
+    width: ;
+} */
+
+.delete-button{
+    height:3.1rem;
+}
+
+.contact-list{
+    width:15rem;
+    margin-left:1rem;
+    list-style: none;
+}
+
+.alert-success {
+    margin-top : 1rem;
+}
