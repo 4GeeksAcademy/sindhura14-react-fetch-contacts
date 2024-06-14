@@ -15,9 +15,12 @@
   padding: 0.5rem;
   display:flex;
   background-color: white;
+  border-radius: 0.5rem 0 0 0.5rem;
+  color:black;
+}
   
 
-}
+
 
 .outer-container {
     background-color: lightblue;
@@ -86,6 +89,7 @@
 
 .delete-button{
     height:3.1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .contact-list{

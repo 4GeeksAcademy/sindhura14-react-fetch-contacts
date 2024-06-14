@@ -18,7 +18,7 @@ export const Home = () => {
 					dispatch({type:"slug/Loaded" , payload:data});
 
 				}else {
-					const resp = await fetch("https://playground.4geeks.com/contact/agendas/Sandra/", {
+					const resp = await fetch("https://playground.4geeks.com/contact/agendas/Sandra", {
 						method: "POST",
 						headers: {
 						  "Content-Type": "application/json"
