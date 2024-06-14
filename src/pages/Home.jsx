@@ -7,8 +7,6 @@ import { Link, Navigate, Outlet } from "react-router-dom";
 export const Home = () => {
 
   const {store, dispatch} =useGlobalReducer()
-  console.log('home page render');
-  console.log(store.contacts);
 
 		useEffect(()=>{
 			async function getUser(){
@@ -32,10 +30,7 @@ export const Home = () => {
 		},[])
 
 
-		async function handleDeleteContact(id){
-			console.log('contact_id',id);
-			dispatch({ type:'contact/deleted' , payload:id})
-
+		async function handleDeleteContact(id){		
 				const resp = await fetch(`https://playground.4geeks.com/contact/agendas/Sandra/contacts/${id}`, {
 				method: "DELETE",
 				headers: {
@@ -43,7 +38,7 @@ export const Home = () => {
 				}
 				});
 				if(resp.ok){
-					console.log('done');
+					dispatch({ type:'contact/deleted' , payload:id})
 				}
 		}
 	return (
@@ -55,7 +50,7 @@ export const Home = () => {
 				store.contacts.map(contact => {
 					return   (
 						<>	
-							<Card contact={contact} deleteContact={() => handleDeleteContact(contact.id)}    key={contact.id} ></Card>
+							<Card contact={contact} deleteContact={() => handleDeleteContact(contact.id)}></Card>
 						</>
 					)
                 })
